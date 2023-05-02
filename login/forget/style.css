@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #effef4;
+}
+.container {
+  position: relative;
+  left: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 20px red;
+}
+.container .drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 30px 25px 40px rgba(0, 30, 20, 0.5);
+  border-radius: 45% 52% 48% 53%;
+  transition: 0.5s;
+}
+.container .drop:hover {
+  border-radius: 10%;
+}
+.container .drop::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+}
+.container .drop::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+}
+.container .drop .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 25px;
+}
+.container .drop .content h2 {
+  position: relative;
+  color: #333;
+  font-size: 1.8em;
+  top: 20px;
+}
+.container .drop .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.container .drop .content form .inputbox {
+  position: relative;
+  width: 225px;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+  border-radius: 25px;
+}
+.container .drop .content form .inputbox::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 65px;
+  height: 5px;
+  border-radius: 59x;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.5);
+}
+.container .drop .content form .inputbox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+.container .drop .content form .inputbox [type="reset"] {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+.container .drop .content form .inputbox:last-child {
+  width: 120px;
+  background: #ee0a0a;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+  transition: 0.5s;
+}
+.container .drop .content form .inputbox:last-child:hover {
+  width: 150px;
+}
+.btn {
+  position: relative;
+  display: flex;
+  text-decoration: n;
+}
