@@ -125,6 +125,29 @@ body {
 }
 .btn {
   position: relative;
+
+  bottom: 0;
+  width: 120px;
+  height: 25px;
   display: flex;
-  text-decoration: n;
+  background: #1d1b1e;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  transition: 0.5s;
+  border-radius: 12px 5px;
+}
+.btn:hover {
+  width: 140px;
+  border-radius: 45%;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
 }

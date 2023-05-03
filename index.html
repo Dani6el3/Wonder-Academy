@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!---<script src="index.js"></script>-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,7 +24,7 @@
         <div class="navlinks">
           <ul>
             <div class="bbn">
-              <a href="#" class="btn">Apply Now</a>
+              <a href="./login/index.html" class="btn">Apply Now</a>
             </div>
             <li><a href="#">OUR SCHOOL</a></li>
             <li><a href="#">ACADEMICS</a></li>
@@ -33,5 +34,76 @@
         </div>
       </div>
     </nav>
+    <section class="header">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
+            src="images/istockphoto-483277718-612x612.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="images/istockphoto-1410336912-612x612.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="images/istockphoto-1331594985-170667a.jpg"
+            style="width: 100%"
+          />
+        </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="pp">
+            <h1 >WONDERLAND <br>ACADEMY</h1>
+              <p>
+                Welcome to Wonderland Academy, where learning is an adventure! We are excited to have you as a part of our school community, where our mission is to inspire curiosity, creativity, and a love of learning in every child.
+
+                At Wonderland Academy, we believe that every child is unique and has their own special talents and abilities. Our experienced and dedicated teachers work tirelessly to create a nurturing and stimulating environment where each child can thrive and reach their full potential.
+                
+                Our curriculum is designed to be engaging, interactive, and tailored to meet the needs of every individual student.
+               </p>
+               <a
+                    href="#"
+                    class="hero-btn"
+                    >Learn more</a
+                  >
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="images/istockphoto-534576649-170667a.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 6000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>

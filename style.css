@@ -6,6 +6,7 @@
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(203, 196, 196, 0.5), rgba(0, 0, 5, 0.1));
 }
 nav {
   display: flex;
@@ -39,4 +40,156 @@ nav img {
   color: #ffff;
   text-decoration: none;
   font-size: 1.2em;
+}
+.btn {
+  position: relative;
+  display: block;
+  margin-left: 90%;
+  bottom: 0;
+  width: 120px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  background: #1d1b1e;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  transition: 0.5s;
+  border-radius: 12px 5px;
+}
+.btn:hover {
+  width: 140px;
+  border-radius: 45%;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Slideshow container */
+.header .slideshow-container {
+  width: 1785px;
+  position: absolute;
+  margin: auto;
+  max-height: 100vh;
+  object-fit: contain;
+  object-position: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides fade img {
+  height: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  max-width: 1300px;
+  /*margin: auto;*/
+  padding-left: 50px;
+  padding-right: 50px;
+  position: absolute;
+  padding-top: 250px;
+  margin-left: 20%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+  border-radius: 50px;
+  height: 800px;
+}
+.col-2 h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  width: 367px;
+  height: 106px;
+  text-align: center;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  color: #3937a1;
+  padding-left: 20%;
+}
+.pp {
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  padding-top: 52px;
+  text-align: center;
+}
+.pp p {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 500px;
+  padding-top: 30px;
+  padding-left: 50px;
+  justify-content: justify;
+  align-items: center;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #0d0707;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #a7aba7;
+  background: #a7abf6;
+  transition: 1s;
 }
