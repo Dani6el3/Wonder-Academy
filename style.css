@@ -121,10 +121,10 @@ nav img {
 }
 .container {
   max-width: 1300px;
-  /*margin: auto;*/
+  margin: auto;
   padding-left: 50px;
   padding-right: 50px;
-  position: absolute;
+  position: relative;
   padding-top: 250px;
   margin-left: 20%;
   margin-top: 60px;
