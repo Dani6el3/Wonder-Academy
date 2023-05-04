@@ -105,7 +105,7 @@ nav img {
 
 /* Fading animation */
 .fade {
-  animation-name: slide;
+  animation-name: fade;
   animation-duration: 1.5s;
 }
 
@@ -118,14 +118,15 @@ nav img {
   }
 }
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
   padding-top: 250px;
-  margin-left: 20%;
-  margin-top: 60px;
+  margin-left: 10%;
+  margin-top: 30px;
+  display: block;
 }
 
 .row {
@@ -142,11 +143,14 @@ nav img {
   max-width: 100%;
   padding: 50px 0;
   border-radius: 50px;
-  height: 800px;
+  height: 750px;
+  object-fit: cover;
 }
 .col-2 h1 {
+  position: relative;
+  display: block;
   font-size: 50px;
-  font-style: normal;
+  font-style: initial;
   font-weight: 600;
   width: 367px;
   height: 106px;
@@ -155,41 +159,40 @@ nav img {
   letter-spacing: 0.02em;
   color: #3937a1;
   padding-left: 20%;
+  -webkit-text-size-adjust: auto;
 }
+
 .pp {
   background-color: #fff;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 700px;
+  height: 650px;
   padding-top: 52px;
   text-align: center;
+  margin-bottom: 7px;
 }
 .pp p {
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 600;
   line-height: 30px;
   text-align: center;
   width: 500px;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 100px;
   justify-content: justify;
   align-items: center;
+  margin-left: 20px;
 }
-.hero-btn {
+.btns {
   display: inline-block;
-  text-decoration: none;
-  color: #000000;
-  border: 1px solid #0d0707;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  margin-top: 20px;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  transition: background 0.5s;
 }
-.hero-btn:hover {
-  border: 1px solid #a7aba7;
-  background: #a7abf6;
-  transition: 1s;
+.btns:hover {
+  background: #563434;
 }
