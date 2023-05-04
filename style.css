@@ -79,7 +79,7 @@ nav img {
 
 /* Slideshow container */
 .header .slideshow-container {
-  width: 1785px;
+  width: 100%;
   position: absolute;
   margin: auto;
   max-height: 100vh;
@@ -87,8 +87,6 @@ nav img {
   object-position: center;
   align-items: center;
   justify-content: center;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 /* Hide the images by default */
