@@ -151,16 +151,14 @@ nav img {
   object-fit: cover;
 }
 .col-2 h1 {
-  position: relative;
-  display: block;
   font-size: 50px;
   font-style: initial;
   font-weight: 600;
-  width: 367px;
-  height: 106px;
+  width: 80%;
+  height: 100px;
   text-align: center;
   line-height: 58px;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   color: #3937a1;
   padding-left: 20%;
   -webkit-text-size-adjust: auto;
@@ -177,7 +175,7 @@ nav img {
   margin-top: 50px;
 }
 .pp p {
-  font-size: 1em;
+  /*font-size: 1em;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
@@ -186,7 +184,14 @@ nav img {
   padding-left: 100px;
   justify-content: justify;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 20px;*/
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 10px;
+  left: 20%;
+  padding-top: 80px;
+  text-align: center;
 }
 .btns {
   display: inline-block;
@@ -250,25 +255,40 @@ nav img {
   display: flex;
   justify-content: space-between;
 }
-.admission-col {
-  flex-basis: 31%;
-  background-color: #fff3f3;
-  border-radius: 10%;
+.col-3 {
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 5%;
   margin-bottom: 5%;
   padding: 20px 12px;
+  width: 100%;
+  height: 300px;
   box-sizing: border-box;
   transition: 0.5;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
-.admission-col img {
+.col-3 img {
   width: 100%;
   height: 300px;
   display: block;
   object-fit: cover;
   object-position: center center;
 }
-/*.admission-col:hover {
+.col-3 h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 600px;
+  color: #000000;
+  margin-top: 18%;
+
+  text-align: center;
+}
+.col-3:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}*/
+}
+
 .layer1 {
   background: transparent;
   height: 100%;
@@ -278,15 +298,16 @@ nav img {
   left: 0;
   transition: 0.5;
 }
-/*.layer1:hover {
-  background: rgba(226, 0, 0, 0.7);
+.layer1:hover {
+  background: rgba(97, 165, 242, 0.872);
 }
 .layer1 h3 {
   width: 100%;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 600;
+  color: #000000;
   font-size: 26px;
-  bottom: 0;
+  line-height: 24px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -294,16 +315,35 @@ nav img {
   transition: 0.5s;
 }
 .layer1:hover h3 {
-  top: 49%;
+  top: 30%;
   opacity: 1;
-}*/
+}
 
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
   }
 }
-
+/*-----events-----*/
+.ppp {
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 5%;
+  margin-bottom: 5%;
+  padding: 20px 18px;
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+  transition: 0.5;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  flex-basis: 31%;
+  text-align: left;
+}
+.ppp img {
+  width: 100%;
+  height: 300px;
+}
 /*-----testimonial-----*/
 .testimonial {
   width: 80%;
