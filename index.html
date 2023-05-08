@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="navbar">
         <div class="navlinks">
           <ul>
@@ -179,6 +179,20 @@
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 6000); // Change image every 2 seconds
       }
+      window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
     </script>
   </body>
 </html>
