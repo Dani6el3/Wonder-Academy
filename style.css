@@ -18,7 +18,13 @@ nav {
   z-index: 1;
 }
 nav img {
-  width: 50px;
+  width: 120px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+nav img:hover {
+  zoom: 1.5;
+  border-radius: 25%;
 }
 .navbar {
   flex: 1;
@@ -41,6 +47,12 @@ nav img {
   color: #ffff;
   text-decoration: none;
   font-size: 1.2em;
+  transition: 0.8s;
+}
+.navlinks ul li a:hover {
+  text-decoration: overline;
+  color: #ff523b;
+  zoom: 1.1;
 }
 .content {
   padding: 16px;
@@ -256,8 +268,8 @@ nav img {
 
 .admission p {
   color: #777;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 22px;
   padding: 10px;
   left: 20%;
@@ -270,10 +282,11 @@ nav img {
 }
 .col-3 {
   position: relative;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
+  justify-content: space-between;
   border-radius: 5%;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 20px 13px;
   width: 100%;
   height: 300px;
   box-sizing: border-box;
@@ -312,7 +325,7 @@ nav img {
   transition: 0.5;
 }
 .layer1:hover {
-  background: rgba(97, 165, 242, 0.872);
+  background: rgba(186, 189, 191, 0.872);
 }
 .layer1 h3 {
   width: 100%;
@@ -328,7 +341,8 @@ nav img {
   transition: 0.5s;
 }
 .layer1:hover h3 {
-  top: 30%;
+  left: 45%;
+  top: 10%;
   opacity: 1;
 }
 
@@ -374,4 +388,33 @@ nav img {
   padding: 25px;
   cursor: pointer;
   display: flex;
+}
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row2 {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.icons .fa {
+  color: #fff;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
 }
