@@ -346,7 +346,7 @@ nav img:hover {
   opacity: 1;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .row {
     flex-direction: column;
   }
@@ -354,23 +354,62 @@ nav img:hover {
 /*-----events-----*/
 .ppp {
   position: relative;
-  background-color: #fafafa;
+  width: 90%;
+  height: 600px;
   border-radius: 5%;
   margin-bottom: 5%;
-  padding: 20px 58px;
-  width: 100%;
-  height: 600px;
-  box-sizing: border-box;
-  transition: 0.5;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  flex-basis: 31%;
-  text-align: left;
+  padding: 20px 13px;
+  background: rgba(251, 249, 255, 0.872);
 }
 .ppp img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 60px;
+  flex-basis: 5%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background: linear-gradient(
+    rgba(147, 142, 142, 0.5),
+    rgba(120, 120, 142, 0.1)
+  );
+  height: 400px;
+  border-radius: 50% 60%/20% 15%;
+}
+form .inputbox {
+  position: relative;
+  width: 225px;
+  align-items: center;
+  margin-top: 20px;
+}
+form .inputbox input {
+  background: transparent;
+  width: 100%;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+form .inputbox [type="submit"] {
+  outline: none;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.12em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-weight: 550;
+}
+form .inputbox:last-child {
+  width: 150px;
+  background: #f71111;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+  transition: 0.5s;
 }
 /*-----testimonial-----*/
 .testimonial {
@@ -413,8 +452,14 @@ footer {
   padding: 10px;
 }
 .icons .fa {
-  color: #fff;
+  color: #ea0c0c;
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
+}
+.lng {
+  position: relative;
+  height: 70px;
+  border-radius: 8px;
+  margin-left: 25px;
 }
